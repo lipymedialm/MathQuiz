@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background1"
+
+    tools:context=".About_usActivity">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="20dp"
+            android:textColor="#fff"
+            android:layout_centerVertical="true"
+            android:text="this is Android Game for The Study Purpose it's made specially for the students who want to do self study with The Help Of This Game Childrens will Increse  IQ Lavel."
+            android:textSize="25sp" />
+
+
+
+
+
+
+</RelativeLayout>

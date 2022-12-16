@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuestionsActivity">
+
+    <com.wajahatkarim3.easyflipview.EasyFlipView
+        android:id="@+id/flip_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:flipOnTouch="false"
+        app:flipEnabled="true"
+        app:flipDuration="400"
+        app:flipFrom="right"
+        app:flipType="horizontal"
+        app:autoFlipBack="false"
+        android:layout_above="@id/adView">
+
+        <!-- Back Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_back"/>
+
+        <!-- Front Layout Goes Here -->
+        <include layout="@layout/flash_card_layout_front" />
+
+    </com.wajahatkarim3.easyflipview.EasyFlipView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="@string/admob_banner_id">
+    </com.google.android.gms.ads.AdView>
+
+
+</RelativeLayout>

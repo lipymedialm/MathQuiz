@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/backgroundnewrename">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/adView"
+        android:layout_marginBottom="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/app_icon"
+                    android:layout_width="70pt"
+                    android:layout_height="70pt"
+                    android:src="@drawable/mathematics"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:outlineAmbientShadowColor="#000"/>
+
+                <TextView
+                    android:id="@+id/app_name"
+                    android:layout_below="@+id/app_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="math quiz"
+                    android:textAllCaps="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="7dp"
+                    android:textSize="35sp"
+                    android:textColor="#FD5E5B"
+                    android:fontFamily="@font/colortube"
+                    android:shadowColor="#000"
+                    android:shadowDx="10"
+                    android:shadowDy="10"
+                    android:textAlignment="center"
+                    android:shadowRadius="5"
+                    />
+                <LinearLayout
+                    android:layout_below="@id/app_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="20dp">
+                    <Button
+                        android:id="@+id/start_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_button_bg"
+                        android:elevation="10dp"
+                        android:text="Levels"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:fontFamily="@font/colortube"
+                        android:textAllCaps="false"/>
+
+                    <Button
+                        android:id="@+id/addition_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_button_bg"
+                        android:elevation="10dp"
+                        android:text="Addition (+)"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:textAllCaps="false"
+                        android:fontFamily="@font/colortube"
+                        android:layout_marginTop="5dp"/>
+                    <Button
+                        android:id="@+id/subtraction_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_button_bg"
+                        android:elevation="10dp"
+                        android:text="Subtraction (-)"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/colortube"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="5dp"/>
+                    <Button
+                        android:id="@+id/multiplication_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_button_bg"
+                        android:elevation="10dp"
+                        android:text="Multiplication (×)"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/colortube"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="5dp"/>
+                    <Button
+                        android:id="@+id/division_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_button_bg"
+                        android:elevation="10dp"
+                        android:text="Division (÷)"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/colortube"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="5dp"/>
+                    <Button
+                        android:id="@+id/mix_btn"
+                        android:layout_width="300dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/main_button_bg"
+                        android:elevation="10dp"
+                        android:text="Mix (+ , - , × , ÷)"
+                        android:textColor="#000"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/colortube"
+                        android:layout_marginTop="5dp"/>
+                    <LinearLayout
+                        android:layout_width="290dp"
+                        android:layout_height="140dp"
+                        android:orientation="horizontal"
+
+                        android:layout_marginBottom="10dp">
+                        <ImageButton
+                            android:id="@+id/sound_switch"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/main_button_bg"
+                            android:elevation="5dp"
+                            android:src="@drawable/music_on"
+                            android:scaleType="fitXY"
+                            android:layout_weight="1"
+                            android:layout_marginRight="5dp"
+                            android:padding="25dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"/>
+
+                        <ImageButton
+                            android:id="@+id/about"
+                            android:layout_width="match_parent"
+                            android:layout_height="100dp"
+                            android:background="@drawable/main_button_bg"
+                            android:elevation="5dp"
+                            android:src="@drawable/about"
+                            android:scaleType="fitXY"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="5dp"
+                            android:padding="25dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-9646044561493426/8356635657">
+    </com.google.android.gms.ads.AdView>
+
+</RelativeLayout>

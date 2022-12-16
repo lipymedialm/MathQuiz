@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/Aboutus"
+        android:title="About_us"/>
+
+    <item android:id="@+id/rules"
+        android:title="Rules"/>
+
+    <item android:id="@+id/term_condition"
+        android:title="Term_Conditions"/>
+
+    <item android:title="Privacy Policy"
+        android:id="@+id/privacy"/>
+
+
+</menu>
