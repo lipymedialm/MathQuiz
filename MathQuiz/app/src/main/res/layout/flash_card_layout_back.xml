@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#F6DDDD">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/my_card"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        app:cardElevation="10dp"
+        app:cardBackgroundColor="#45E4F8"
+        app:cardCornerRadius="5dp"
+        android:layout_margin="40dp"
+        android:layout_below="@+id/clock"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#45E4F8"
+            android:layout_margin="5dp">
+
+            <TextView
+                android:id="@+id/back_equation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:textColor="#000"
+                android:textSize="18sp"
+                tools:text="Equation" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/clock"/>
+
+        <TextView
+            android:id="@+id/back_counter_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="5"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/prog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:layout_marginTop="10dp">
+        <ProgressBar
+            android:id="@+id/back_progressBar"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:indeterminate="false"
+            android:progressDrawable="@drawable/circular_progress_bar"
+            android:background="@drawable/circle_shape"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:max="5"
+            android:progress="5"
+            />
+
+        <TextView
+            android:id="@+id/back_progress_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            tools:text="0"
+            android:textSize="12sp"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/back_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:textColor="#000"
+        android:textSize="12sp"
+        tools:text="score: 5"/>
+
+    <TextView
+        android:id="@+id/back_high_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"
+        android:textSize="12sp"
+        android:textAlignment="center"
+        tools:text="best\n5"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="350dp"
+        android:layout_marginRight="25pt"
+        android:layout_marginLeft="25pt"
+        android:orientation="vertical"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back_card_one"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/back_ans_one"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        tools:text="ans" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back_card_two"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                app:cardElevation="10dp"
+
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#fff"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/back_ans_two"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        tools:text="ans" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back_card_three"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cardBackgroundColor="#fff"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/back_ans_three"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        tools:text="ans" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+            <androidx.cardview.widget.CardView
+                android:id="@+id/back_card_four"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:layout_height="120dp"
+                app:cardElevation="10dp"
+                app:cardBackgroundColor="#fff"
+                app:cardCornerRadius="5dp"
+                android:layout_margin="5dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_margin="5dp">
+
+                    <TextView
+                        android:id="@+id/back_ans_four"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:textColor="#000"
+                        android:textSize="17sp"
+                        tools:text="ans" />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

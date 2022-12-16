@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroundred"
+    tools:context=".RuleActivity">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+
+
+
+
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:textColor="#3E3C3C"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+
+        android:text="In this round each person has its own quota of 5 questions and other
+questions passed to it from the previous level that did not answer.
+A person gets 10 seconds to answer the question intended for it,
+If the team, the question intended for gives a wrong answer, the quiz
+master will give the correct answer.
+If the team that the question intended for passes it. The next level get
+10 seconds to answer it and is awarded 10 points for the right answer.
+The team members can discuss before giving the answer.
+If a team cannot answer a question they can pass it or after 10 seconds
+it gets automatically give to the time out dailog box.
+If a team is answering a question and the time passes, then the team
+gets to complete the answer and is awarded points for the right answer.
+There is no negative marking for wrong answer."
+        android:textStyle="bold"/>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
